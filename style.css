@@ -6,7 +6,6 @@
 
 body {
     background-color: #fefae0;
-    height: 200dvh;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -54,20 +53,39 @@ body {
     border-bottom: 2px solid black;
 }
 
-.hero-image {
-    background-image: url('images/image_3.png');
+.hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+}
+
+.hero-position {
     width: 100%;
     height: 100dvh;
-    background-position: center;
-    background-size: cover;
     position: absolute;
     top: 0px;
+}
+
+.hero-spacer {
+    width: 100%;
+    height: 100%;
+    outline: 1px solid red;
+}
+
+.hero-image {
+    background-image: url('images/image_3.png');
+    background-position: center;
+    background-size: cover;
     transition: filter 350ms ease-in-out;
-    filter: brightness(120%);
+    filter: blur(3px) brightness(75%);
+    height: 100dvh;
 }
 
 .hero-image-scrolled {
-    filter: blur(3px) brightness(120%);
+    filter: blur(0px) brightness(85%);
 }
 
 .unbutton {
@@ -79,6 +97,63 @@ body {
     font: inherit;
     border-radius: 0;
     appearance: none;
+}
+
+section {
+    width: 100%;
+    padding: 2dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section h2 {
+    font-size: 2.25rem;
+    color: #590d22;
+}
+
+section p {
+    font-size: 1.25rem;
+    padding: 2dvh;
+    text-align: center;
+}
+
+section a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5dvh 1dvh;
+    margin: 1dvh;
+    background-color: #ffdab9;
+    color: black;
+}
+
+.grief-support-groups img,
+.grief-education img,
+.newsletter img {
+    width: 75%;
+    padding: 2dvh;
+}
+
+.about-us-grief-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 20dvh;
+}
+
+.about-us-grief-info .grief-support-groups {
+    /* border-right: 1px solid #590d22; */
+}
+
+.about-us-grief-info .grief-education {
+    /* border-left: 1px solid #590d22; */
+}
+
+.about-us-support-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* fonts */
