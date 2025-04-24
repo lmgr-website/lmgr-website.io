@@ -1,27 +1,88 @@
-// Get the div
-const scrollDiv = document.querySelector('.nav');
+document.addEventListener('DOMContentLoaded', function () {
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mainMenu = document.getElementById('mainMenu');
 
-// Listen for the scroll event on the window
-window.addEventListener('scroll', function() {
-    // Check if the page has been scrolled down by a certain amount
-    if (window.scrollY > 50) { // Change 50 to whatever scroll position you want
-        scrollDiv.classList.add('nav-scrolled'); // Add the class when scrolled
-    } else {
-        scrollDiv.classList.remove('nav-scrolled'); // Remove the class when back at the top
+    menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mainMenu.classList.toggle('active');
+    });
+
+    // Language Toggle
+    const langToggle = document.getElementById('langToggle');
+    let language = 'en';
+
+    langToggle.addEventListener('click', function () {
+        if (language === 'en') {
+            language = 'fr';
+            langToggle.textContent = 'English';
+            // In a real implementation, this would call a function to change the language
+            alert('This would switch the site to French in a full implementation');
+        } else {
+            language = 'en';
+            langToggle.textContent = 'Français';
+            // In a real implementation, this would call a function to change the language
+            alert('This would switch the site to English in a full implementation');
+        }
+    });
+
+    // Scroll Header Effect
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                menuToggle.classList.remove('active');
+                mainMenu.classList.remove('active');
+            }
+        });
+    });
+
+    // Scroll animations
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    function checkFade() {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('appear');
+            }
+        });
     }
-});
 
+    // Initial check
+    checkFade();
 
+    // Check on scroll
+    window.addEventListener('scroll', checkFade);
 
-// Get the div
-heroImage = document.querySelector('.hero-image');
+    const colorPicker = document.getElementById('colorPickerPrimary');
 
-// Listen for the scroll event on the window
-window.addEventListener('scroll', function() {
-    // Check if the page has been scrolled down by a certain amount
-    if (window.scrollY > 50) { // Change 50 to whatever scroll position you want
-        heroImage.classList.add('hero-image-scrolled'); // Add the class when scrolled
-    } else {
-        heroImage.classList.remove('hero-image-scrolled'); // Remove the class when back at the top
-    }
+    colorPicker.addEventListener('input', function() {
+        document.documentElement.style.setProperty('--primary-color',this.value)
+    })
 });

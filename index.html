@@ -1,631 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vancouver Grief Society</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <style>
-        /* CSS Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --primary-color: #7d5ba6;
-            --secondary-color: #f6f3fb;
-            --accent-color: #e7c384;
-            --text-color: #333333;
-            --light-text: #555555;
-            --background: #ffffff;
-            --dark-bg: #5a4066;
-        }
-        
-        body {
-            font-family: 'Lora', serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--background);
-        }
-        
-        h1, h2, h3, h4, h5, h6, .btn, nav, .logo {
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        /* Container */
-        .container {
-            width: 92%;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-        
-        /* Header */
-        header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 100;
-            padding: 20px 0;
-            transition: background-color 0.3s ease;
-        }
-        
-        header.scrolled {
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            position: fixed;
-            padding: 10px 0;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            z-index: 101;
-        }
-        
-        /* Navigation */
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--primary-color);
-            font-weight: 500;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            transition: all 0.3s;
-            position: relative;
-        }
-        
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent-color);
-            bottom: -5px;
-            left: 0;
-            transition: width 0.3s;
-        }
-        
-        nav ul li a:hover::after {
-            width: 100%;
-        }
-        
-        /* Language Toggle */
-        .lang-toggle {
-            background-color: transparent;
-            color: var(--primary-color);
-            border: 1px solid var(--primary-color);
-            padding: 8px 16px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-weight: 500;
-            margin-left: 25px;
-            transition: all 0.3s;
-        }
-        
-        .lang-toggle:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        /* Hero Section with Full-Width Image */
-        .hero {
-            position: relative;
-            height: 100vh;
-            min-height: 650px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('images/image.png');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.6);
-            z-index: -1;
-        }
-        
-        /* Note: In a real implementation, we would use actual images like:
-           background-image: url('/images/hero-grief-support.jpg'); */
-        
-        .hero-content {
-            max-width: 850px;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-            line-height: 1.3;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 300;
-        }
-        
-        .highlight-box {
-            display: inline-block;
-            background-color: var(--accent-color);
-            padding: 10px 25px;
-            border-radius: 30px;
-            font-weight: 500;
-            margin-bottom: 30px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            padding: 14px 32px;
-            border-radius: 30px;
-            font-weight: 500;
-            font-size: 1rem;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background-color: var(--dark-bg);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .btn-secondary {
-            background-color: transparent;
-            border: 1px solid white;
-            margin-left: 15px;
-        }
-        
-        .btn-secondary:hover {
-            background-color: white;
-            color: var(--primary-color);
-        }
-        
-        /* Main Content */
-        .section {
-            padding: 80px 0;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.2rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        
-        .section-title p {
-            max-width: 700px;
-            margin: 0 auto;
-            color: var(--light-text);
-        }
-        
-        /* Mission & Values Section */
-        .mission-values {
-            background-color: var(--secondary-color);
-            padding: 80px 0;
-        }
-        
-        .mission-values-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .mission-content h2 {
-            color: var(--primary-color);
-            margin-bottom: 25px;
-            font-size: 1.8rem;
-        }
-        
-        .mission-content p {
-            margin-bottom: 25px;
-        }
-        
-        .values-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        
-        .value-item {
-            background-color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: 500;
-            color: var(--primary-color);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .mission-image {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .mission-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* Services Section */
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            transition: all 0.5s;
-        }
-        
-        .service-card:hover img {
-            transform: scale(1.05);
-        }
-        
-        .service-card-content {
-            padding: 30px;
-        }
-        
-        .service-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        .service-link {
-            display: inline-block;
-            margin-top: 15px;
-            color: var(--primary-color);
-            font-weight: 500;
-            text-decoration: none;
-            position: relative;
-        }
-        
-        .service-link::after {
-            content: '→';
-            margin-left: 5px;
-            transition: transform 0.3s;
-            display: inline-block;
-        }
-        
-        .service-link:hover::after {
-            transform: translateX(5px);
-        }
-        
-        /* Donation Section */
-        .donation {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .donation h2 {
-            margin-bottom: 20px;
-            font-size: 2.2rem;
-        }
-        
-        .donation p {
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .donation .btn {
-            background-color: var(--accent-color);
-            color: var(--dark-bg);
-        }
-        
-        .donation .btn:hover {
-            background-color: white;
-        }
-        
-        /* Testimonial Section */
-        .testimonials {
-            padding: 80px 0;
-            background-color: var(--secondary-color);
-        }
-        
-        .testimonial-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            margin: 0 auto;
-            max-width: 800px;
-            position: relative;
-        }
-        
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 20px;
-            left: 30px;
-            font-size: 5rem;
-            color: var(--accent-color);
-            opacity: 0.3;
-            font-family: 'Georgia', serif;
-        }
-        
-        .testimonial-content {
-            font-style: italic;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            color: var(--light-text);
-            position: relative;
-            z-index: 1;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--primary-color);
-            display: flex;
-            align-items: center;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark-bg);
-            color: white;
-            padding: 70px 0 40px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-            color: var(--accent-color);
-            font-weight: 500;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-column ul li a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .acknowledgement {
-            max-width: 800px;
-            margin: 0 auto 20px;
-            line-height: 1.6;
-        }
-        
-        /* Mobile Navigation */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
-            cursor: pointer;
-            z-index: 101;
-        }
-        
-        .menu-toggle span {
-            display: block;
-            height: 3px;
-            width: 100%;
-            background-color: var(--primary-color);
-            transition: all 0.3s;
-        }
-        
-        /* Mobile Responsiveness */
-        @media (max-width: 992px) {
-            .mission-values-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .mission-image {
-                order: -1;
-                max-width: 600px;
-                margin: 0 auto 40px;
-            }
-            
-            .hero h1 {
-                font-size: 2.4rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
-            }
-            
-            .menu-toggle.active span:nth-child(1) {
-                transform: translateY(9px) rotate(45deg);
-            }
-            
-            .menu-toggle.active span:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .menu-toggle.active span:nth-child(3) {
-                transform: translateY(-9px) rotate(-45deg);
-            }
-            
-            nav ul {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 300px;
-                height: 100vh;
-                background-color: white;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transition: right 0.3s;
-                box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
-                z-index: 100;
-            }
-            
-            nav ul.active {
-                right: 0;
-            }
-            
-            nav ul li {
-                margin: 15px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .lang-toggle {
-                margin-right: 20px;
-            }
-            
-            .btn {
-                display: block;
-                width: 100%;
-                margin-bottom: 15px;
-            }
-            
-            .btn-secondary {
-                margin-left: 0;
-            }
-            
-            .section {
-                padding: 60px 0;
-            }
-        }
-        
-        /* Skip to content for accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--primary-color);
-            color: white;
-            padding: 8px;
-            z-index: 101;
-        }
-        
-        .skip-link:focus {
-            top: 0;
-        }
-        
-        /* Animation classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .fade-in.appear {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Skip to content link for accessibility -->
     <a href="#main-content" class="skip-link">Skip to primary content</a>
-    
+
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
@@ -649,19 +40,25 @@
             </nav>
         </div>
     </header>
-    
+
     <!-- Hero Section with Full-Width Image -->
     <section class="hero">
+        <div class="hero-images">
+            <div class="left-left"></div>
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+            <div class="right-right"></div>
+        </div>
         <div class="hero-content">
             <h1>Find healing and connection on your grief journey</h1>
             <p>Compassionate support for those who have experienced the loss of someone significant</p>
             <div class="hero-buttons">
-                <a href="#" class="btn">Find Support</a>
-                <a href="#" class="btn btn-secondary">Learn More</a>
+                <a href="#" class="btn">Learn More</a>
             </div>
         </div>
     </section>
-    
+
     <!-- Main Content -->
     <main id="main-content">
         <!-- Mission & Values Section -->
@@ -669,8 +66,9 @@
             <div class="container mission-values-container">
                 <div class="mission-content fade-in">
                     <h2>Our Mission</h2>
-                    <p>Supporting the bereaved in rebuilding their lives by creating safe, compassionate spaces to share and process grief together.</p>
-                    
+                    <p>Supporting the bereaved in rebuilding their lives by creating safe, compassionate spaces to share
+                        and process grief together.</p>
+
                     <h2>Our Values</h2>
                     <div class="values-list">
                         <span class="value-item">Healing</span>
@@ -686,7 +84,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Services Section -->
         <section class="section">
             <div class="container">
@@ -694,38 +92,41 @@
                     <h2>What We Offer</h2>
                     <p>Programs and resources to help you navigate your grief journey</p>
                 </div>
-                
+
                 <div class="services-container">
                     <div class="service-card fade-in">
                         <img src="images/image_2.png" alt="Support group gathering in a circle with facilitator">
                         <div class="service-card-content">
                             <h3>Grief Support Groups</h3>
-                            <p>Join a community of people who understand your experience. Our trained facilitators guide participants through healing with compassion and practical coping tools.</p>
+                            <p>Join a community of people who understand your experience. Our trained facilitators guide
+                                participants through healing with compassion and practical coping tools.</p>
                             <a href="#" class="service-link">Learn more</a>
                         </div>
                     </div>
-                    
+
                     <div class="service-card fade-in">
                         <img src="images/image_4.jpeg" alt="Education workshop with people taking notes">
                         <div class="service-card-content">
                             <h3>Grief Education</h3>
-                            <p>We offer workshops and training for individuals and organizations seeking to develop skills for supporting themselves and others through grief.</p>
+                            <p>We offer workshops and training for individuals and organizations seeking to develop
+                                skills for supporting themselves and others through grief.</p>
                             <a href="#" class="service-link">Learn more</a>
                         </div>
                     </div>
-                    
+
                     <div class="service-card fade-in">
                         <img src="images/image.png" alt="Person reading grief resources by a window">
                         <div class="service-card-content">
                             <h3>Resources & Materials</h3>
-                            <p>Access books, articles, videos, and other resources that provide guidance and insight for navigating the complexities of grief.</p>
+                            <p>Access books, articles, videos, and other resources that provide guidance and insight for
+                                navigating the complexities of grief.</p>
                             <a href="#" class="service-link">Learn more</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Testimonial Section -->
         <section class="testimonials">
             <div class="container">
@@ -733,29 +134,47 @@
                     <h2>Voices of Healing</h2>
                     <p>Stories from those who have found support through our programs</p>
                 </div>
-                
+
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-content">
-                        The grief support group gave me a safe place to express my feelings when I felt so alone. The facilitators and other group members helped me understand that my grief journey is unique, but I don't have to walk it alone. This community has been a lifeline during the darkest period of my life.
+                        The grief support group gave me a safe place to express my feelings when I felt so alone. The
+                        facilitators and other group members helped me understand that my grief journey is unique, but I
+                        don't have to walk it alone. This community has been a lifeline during the darkest period of my
+                        life.
                     </div>
                     <div class="testimonial-author">
-                        <img src="/api/placeholder/50/50" alt="Testimonial author" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px;">
+                        <img src="/api/placeholder/50/50" alt="Testimonial author"
+                            style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px;">
                         <span>- Support Group Participant</span>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Donation Section -->
         <section class="donation">
             <div class="container">
                 <h2 class="fade-in">Support Our Work</h2>
-                <p class="fade-in">As a non-profit organization that doesn't receive public funding, we rely on community support. Your contributions make our services possible for those in need.</p>
+                <p class="fade-in">As a non-profit organization that doesn't receive public funding, we rely on
+                    community support. Your contributions make our services possible for those in need.</p>
                 <a href="#" class="btn fade-in">Donate Today</a>
             </div>
         </section>
     </main>
-    
+
+    <section class="karen">
+        <p>
+            Hi, this element will be removed. It is here for you to test out different colors and their feel.
+            Click on the color picker below to update the color. 
+            You can also use <a href="https://coolors.co/palettes">coolors.ca</a> to find colors
+        </p>
+        <label for="colorPickerPrimary">
+            Primary color of the website
+            <input type="color" id="colorPickerPrimary" value="#258d86">
+        </label>
+        Note: we can select other colors according to the primary color. So, we should focus on primary color first.
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -796,100 +215,19 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <div class="acknowledgement">
-                    Vancouver Grief Society acknowledges that we live, work, and gather on the unceded traditional territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations. We honor the diverse histories, languages, and cultures of Indigenous Peoples across these lands.
+                    Vancouver Grief Society acknowledges that we live, work, and gather on the unceded traditional
+                    territories of the xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh)
+                    Nations. We honor the diverse histories, languages, and cultures of Indigenous Peoples across these
+                    lands.
                 </div>
                 <p>© 2025 Vancouver Grief Society. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
-            const menuToggle = document.getElementById('menuToggle');
-            const mainMenu = document.getElementById('mainMenu');
-            
-            menuToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                mainMenu.classList.toggle('active');
-            });
-            
-            // Language Toggle
-            const langToggle = document.getElementById('langToggle');
-            let language = 'en';
-            
-            langToggle.addEventListener('click', function() {
-                if (language === 'en') {
-                    language = 'fr';
-                    langToggle.textContent = 'English';
-                    // In a real implementation, this would call a function to change the language
-                    alert('This would switch the site to French in a full implementation');
-                } else {
-                    language = 'en';
-                    langToggle.textContent = 'Français';
-                    // In a real implementation, this would call a function to change the language
-                    alert('This would switch the site to English in a full implementation');
-                }
-            });
-            
-            // Scroll Header Effect
-            const header = document.getElementById('header');
-            
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            });
-            
-            // Smooth scrolling for navigation
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const headerOffset = 80;
-                        const elementPosition = target.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                        
-                        // Close mobile menu if open
-                        menuToggle.classList.remove('active');
-                        mainMenu.classList.remove('active');
-                    }
-                });
-            });
-            
-            // Scroll animations
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            function checkFade() {
-                fadeElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-                    
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.classList.add('appear');
-                    }
-                });
-            }
-            
-            // Initial check
-            checkFade();
-            
-            // Check on scroll
-            window.addEventListener('scroll', checkFade);
-        });
-    </script>
 </body>
+<script src="script.js"></script>
+
 </html>
