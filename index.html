@@ -8,28 +8,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav quattrocento-sans-bold">
+    <nav class="nav">
         <div class="nav-header">Vancouver Grief Society</div>
-        <div class="nav-links-container quattrocento-sans-regular">
-            <button class="unbutton nav-links" href="about-us.html" >About us</button>
-            <button class="unbutton nav-links">Events</button>
-            <button class="unbutton nav-links">Programs</button>
-            <button class="unbutton nav-links">Contribute</button>
-            <button class="unbutton nav-links">Testimonials</button>
-            <button class="unbutton nav-links">More Information</button>
-            <button class="unbutton nav-links">Newsletter</button>
-            <button class="unbutton nav-links">Resources</button>
+        <div class="nav-links-container">
+            <button href="about-us.html" >About us</button>
+            <button>Events</button>
+            <button>Programs</button>
+            <button>Contribute</button>
+            <button>Testimonials</button>
+            <button>More Information</button>
+            <button>Newsletter</button>
+            <button>Resources</button>
         </div>
     </nav>
-    <div class="hero-image"></div>
-    <div class="hero-position hero-text">
-        Find your path through Grief
-        <div class="hero-text-spacer"></div>
+    <div id="index-page-image">
+        <img src="images/image.png">
+        <img src="images/stanleyPark.png">
+        <img src="images/hands.png">
     </div>
-
+    <section id="hero-text-holder">
+        <div class="hero-text" id="big-text">
+            Find healing and connection on your grief journey
+        </div>
+        <div class="hero-text" id="small-text">
+            Compassionate support for those who have experienced the loss of someone significant
+        </div>
+    </section>
     <section class="mission">
         <h2 class="quattrocento-sans-bold">Our Mission</h2>
         <p class="quattrocento-sans-regular">Empowering those who grieve to rebuild their lives through understanding, compassion, and community.</p>
@@ -53,15 +61,15 @@
                 <h2 class="quattrocento-sans-bold">Grief Support Groups</h2>
                 <img src="images/image_5.jpeg" alt="" srcset="">
                 <p class="quattrocento-sans-regular">Find solace and support in our facilitated groups. Share your journey with others who understand, and discover tools for healing.</p>
-                <a href="/support-groups" class="button">Learn More</a>    
+                <button href="/support-groups" class="not-nav-link-button">Learn More</button>    
             </section>
         </div>
         <div class="newsletter">
             <section>
                 <h2 class="quattrocento-sans-bold">Newsletter</h2>
                 <img src="images/image_6.jpeg" alt="" srcset="">
-                <p class="quattrocento-sans-regular">Navigating grief is easier together. Join the Vancouver Grief Society community. Our newsletter brings you event details, supportive resources, and a sense of belonging.</p>
-                <a href="/newsletter" class="button">Newsletter</a>    
+                <p class="quattrocento-sans-regular">Navigating grief is easier together. Join the Vancouver Grief Society community. Our newsletter brings you event details, supportive resources, and button sense of belonging.</p>
+                <button href="/newsletter" class="not-nav-link-button">Newsletter</button>    
             </section>
         </div>
         <div class="grief-education">
@@ -69,14 +77,42 @@
                 <h2 class="quattrocento-sans-bold">Grief Education</h2>
                 <img src="images/image_4.jpeg" alt="" srcset="">
                 <p class="quattrocento-sans-regular">Equip yourself and your organization with the skills to navigate grief. We offer tailored education programs.</p>
-                <a href="/education" class="button">Explore Education</a>
+                <button href="/education" class="not-nav-link-button">Explore Education</button>
             </section>
         </div>
     </div>
     
+    <section id="voices_of_healing">
+        <h2> Voices of Healing </h2>
+        <h3> How Our Programs Changed Lives: Stories of people from our support groups </h3>
+
+        <div class="testimonials-holder">
+            <div class="testimonial active" id="testimonial_1">
+                <blockquote>
+                    "After losing my husband, I felt so alone. The support group helped me find strength I didn't know I had."
+                </blockquote>
+                <cite>— Sarah, Group Participant</cite>
+            </div>
+            
+            <div class="testimonial" id="testimonial_2">
+                <blockquote>
+                    "The grief education workshop gave me tools to support my children through their loss."
+                </blockquote>
+                <cite>— Michael, Workshop Attendee</cite>
+            </div>
+            
+            <div class="testimonial" id="testimonial_3">
+                <blockquote>
+                    "I found understanding and acceptance here that I couldn't find anywhere else."
+                </blockquote>
+                <cite>— Emma, Support Group Member</cite>
+            </div>
+        </div>
+
+    </section>
     
-    <section>
-        <h2 class="quattrocento-sans-bold">Your Support Matters</h2>
+    <section id="donation_and_volunteer">
+        <h2 class="quattrocento-sans-bold">Support Our Work</h2>
         <p class="quattrocento-sans-regular">As a non-profit, we rely on community generosity to provide vital grief support. Join us in making a difference.
             <br>
         We are a registered charity dedicated to supporting those who have experienced the death of a significant person. We provide a non-judgmental and compassionate environment.
@@ -84,13 +120,13 @@
         Please consider a donation or volunteering.
         </p>
         <div class="about-us-support-buttons">
-            <a href="/donate" class="button">Donate</a>
-            <a href="/volunteer" class="button">Volunteer</a>
+            <button href="/donate" class="not-nav-link-button">Donate</button>
+            <button href="/volunteer" class="not-nav-link-button">Volunteer</button>
         </div>
     </section>
       
 </body>
-<link rel="stylesheet" href="style.css">
+
 <script src="script.js"></script>
 
 </html>
