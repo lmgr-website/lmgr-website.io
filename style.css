@@ -3,8 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: inherit;              /* Use the same color as the parent element */
+    text-decoration: none;       /* Remove underlines */
+    cursor: pointer;             /* Keep the pointer cursor */
+    outline: none;               /* Remove the outline on focus */
 }
 
+a:hover, a:focus {
+    color: inherit;              /* Keep the same color on hover and focus */
+    text-decoration: none;       /* Keep no underlines on hover */
+}
 :root {
     --primary-color: #258d86;
     --secondary-color: #f6f3fb;
@@ -22,17 +33,7 @@ body {
     background-color: var(--background);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.btn,
-nav,
-.logo {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 /* Container */
 .container {
@@ -75,51 +76,34 @@ header.scrolled {
 
 .logo {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight:bolder;
     color: var(--primary-color);
     z-index: 101;
 }
 
-/* Navigation */
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
+nav button {
+    background-color: var(--background);
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 30px;
-}
-
-nav ul li a {
+    border: none;
+    outline: none;
     text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 500;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: transparent;     
+    border: none;                      
+    font-size: 1em;                    
+    cursor: pointer;                   
+    padding: 10px 20px;   
+    cursor: pointer;
+
+}
+nav button:hover {       
+    border-radius: 5px; 
+    background-color: var(--primary-color);  
+    color: white;   
 }
 
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    bottom: -5px;
-    left: 0;
-    transition: width 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
 
 /* Language Toggle */
 .lang-toggle {
@@ -615,30 +599,7 @@ footer {
     .menu-toggle.active span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
-
-    nav ul {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 300px;
-        height: 100vh;
-        background-color: white;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.3s;
-        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-    }
-
-    nav ul.active {
-        right: 0;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-    }
-
+    
     .hero h1 {
         font-size: 2rem;
     }
