@@ -1,3 +1,4 @@
+
 /* CSS Reset and Base Styles */
 * {
     margin: 0;
@@ -17,13 +18,13 @@ a:hover, a:focus {
     text-decoration: none;       /* Keep no underlines on hover */
 }
 :root {
-    --primary-color: #A31D1D;
-    --secondary-color: #FEF9E1;
-    --accent-color: #6D2323;
+    --primary-color: #C80036;
+    --secondary-color: #FFF5E1;
+    --accent-color: #0C1844;
     --text-color: #1d1c1c;
-    --light-text: #E5D0AC;
+    --light-text: #FF6969;
     --background: #ffffff;
-    --dark-bg: #6D2323;
+    --dark-bg: #0C1844;
 }
 
 body {
@@ -44,7 +45,6 @@ body {
 
 /* Header */
 header {
-    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -238,7 +238,7 @@ nav button:hover {
 
 .highlight-box {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     padding: 10px 25px;
     border-radius: 30px;
     font-weight: 500;
@@ -269,6 +269,7 @@ nav button:hover {
     background-color: var(--accent-color);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: var(--light-text);
 }
 
 .btn-secondary {
