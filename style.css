@@ -18,13 +18,13 @@ a:hover, a:focus {
     text-decoration: none;       /* Keep no underlines on hover */
 }
 :root {
-    --primary-color: #C80036;
-    --secondary-color: #FFF5E1;
-    --accent-color: #0C1844;
+    --primary-color: #A31D1D;
+    --secondary-color: #FEF9E1;
+    --accent-color: #6D2323;
     --text-color: #1d1c1c;
-    --light-text: #FF6969;
+    --light-text: #EFD0AC;
     --background: #ffffff;
-    --dark-bg: #0C1844;
+    --dark-bg: #6D2323;
 }
 
 body {
@@ -221,7 +221,7 @@ nav button:hover {
 }
 
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
     line-height: 1.3;
