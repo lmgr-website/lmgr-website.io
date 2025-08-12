@@ -53,15 +53,18 @@
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: var(--light-text);
-    color: var(--accent-color);
+    background-color: var(--primary-color);
+    color: var(--light-text);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-weight: 500;
+    border: 1px solid transparent;
 }
 
 .btn-hero:hover {
-    background-color: var(--secondary-color);
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Responsive: stack into 1-column grid on extra small screens */
