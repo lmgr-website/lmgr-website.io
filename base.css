@@ -1,0 +1,28 @@
+
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: #A31D1D;
+    --secondary-color: #FEF9E1;
+    --accent-color: #6D2323;
+    --text-color: #1d1c1c;
+    --light-text: #EFD0AC;
+    --background: #ffffff;
+    --dark-bg: #6D2323;
+}
+
+body {
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+}

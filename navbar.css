@@ -1,0 +1,36 @@
+.site-header {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-brand:hover {
+    color: var(--accent-color);
+}
+
+.btn-nav {
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    text-wrap: nowrap;
+}
+
+.btn-nav:hover {
+    color: var(--background);
+    background-color: var(--primary-color);
+}
