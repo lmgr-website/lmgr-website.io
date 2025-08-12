@@ -1,0 +1,84 @@
+.what-we-offer {
+    padding: 4rem 0;
+    background-color: var(--background);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.section-header p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.offer-card {
+    background-color: var(--background);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-2px);
+}
+
+.offer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 
+        width 250ms ease-in-out,
+        height 1s ease-in-out;
+}
+
+.offer-card:hover img {
+    width: 105%;
+}
+
+.offer-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.offer-content h3 {
+    margin: 0;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.offer-content p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+.learn-link {
+    margin-top: auto;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.learn-link:hover {
+    color: var(--accent-color);
+}
