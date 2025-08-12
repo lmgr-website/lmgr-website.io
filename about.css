@@ -22,7 +22,8 @@
 }
 
 /* Section Headers */
-.about-us h2 {
+.about-us h2,
+.facilitators h2 {
     font-size: 1.6rem;
     font-weight: bold;
     margin-top: 3rem;
@@ -42,7 +43,7 @@
 
 @media (min-width: 768px) {
     .board-grid {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     }
 }
 
@@ -79,6 +80,12 @@
 }
 
 /* Facilitators Grid */
+.facilitator-container {
+    padding-bottom: 4rem;
+    color: var(--text-color);
+    background-color: var(--light-text);
+}
+
 .facilitator-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
