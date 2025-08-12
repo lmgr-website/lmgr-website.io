@@ -1,0 +1,106 @@
+/* General Section Styling */
+.about-us {
+    padding: 4rem 1rem;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.about-us h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.about-us .intro {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Section Headers */
+.about-us h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Board of Directors */
+.board-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .board-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+.board-member {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.board-member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.board-member h3 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.role {
+    display: block;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+}
+
+.role.small {
+    font-size: 0.8rem;
+}
+
+/* Facilitators Grid */
+.facilitator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.facilitator-card {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.facilitator-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.facilitator-card p {
+    color: var(--text-color);
+    margin: 0;
+}
