@@ -64,7 +64,7 @@
     background-color: var(--secondary-color);
 }
 
-/* Responsive: stack into 1-column grid on small screens */
+/* Responsive: stack into 1-column grid on extra small screens */
 @media (max-width: 540px) {
     .hero-grid {
         grid-template-columns: 1fr;
