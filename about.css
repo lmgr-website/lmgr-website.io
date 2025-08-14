@@ -46,11 +46,11 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
 
 .board-member img {
-    width: 200px;
+    width: 150px;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 100%;
