@@ -14,10 +14,11 @@
 .navbar-brand {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
+    transition: font-size 50ms ease-in-out;
 }
 
 .navbar-brand:hover {
