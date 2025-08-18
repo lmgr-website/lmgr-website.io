@@ -1,11 +1,10 @@
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
-    gap: 10px;
+    gap: 20px;
     margin-top: 10px;
-    max-width: 70vh;
-    aspect-ratio: 1;
+    max-width: 105vh; /* Increased from 70vh to 90vh */
+    aspect-ratio: 1.65; /* Changed from 1 to make it slightly wider */
 }
 
 .grid-item {
