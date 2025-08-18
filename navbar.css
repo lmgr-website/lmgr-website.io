@@ -11,18 +11,31 @@
     padding: 1rem 0;
 }
 
+.navbar .container {
+    max-width: 80%; /* Set to 60% of viewport width */
+    padding-left: 1.2rem; /* Reduce from 2rem for less spacing */
+    padding-right: 1.2rem; /* Reduce from 2rem for less spacing */
+}
+
 .navbar-brand {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     transition: font-size 50ms ease-in-out;
+    flex: 0 0 auto; /* Don't shrink, but allow natural sizing */
+    margin-right: 1rem; /* Keep this as is */
 }
 
 .navbar-brand:hover {
     color: var(--accent-color);
+}
+
+.navbar-nav {
+    flex: 1; /* Allow nav items to use remaining space */
+    justify-content: flex-end;
 }
 
 .btn-nav {
@@ -35,9 +48,17 @@
         background-color 0.2s ease,
         border-color 0.2s ease;
     text-wrap: nowrap;
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .btn-nav:hover {
     color: var(--background);
     background-color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.8rem; /* Smaller on mobile */
+    }
 }
