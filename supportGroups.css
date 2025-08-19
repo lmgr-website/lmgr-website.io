@@ -1,0 +1,82 @@
+/* Support Groups Page Styles */
+
+/* Locations Section */
+.locations {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.locations h2 {
+    margin-bottom: 2rem;
+}
+
+/* Override board-member-container for locations */
+.locations .board-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Location Cards */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.location-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--primary-color);
+}
+
+.location-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.location-card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Registration Information */
+.registration-info {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.registration-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--light-text);
+    border-radius: 8px;
+}
+
+.registration-content p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .location-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    .location-card {
+        flex: 1;
+        max-width: 280px;
+    }
+}
