@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    max-width: 600px;
+    max-width: 900px; /* Increased from 800px */
     margin: 0 auto;
     text-align: center;
 }
@@ -30,10 +30,12 @@
 .location-card {
     background-color: var(--secondary-color);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 2rem; /* Keep padding the same or reduce it */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--primary-color);
+    min-width: 380px; /* Increase card width instead */
+    width: 100%; /* Allow cards to use available space */
 }
 
 .location-card h3 {
@@ -54,11 +56,12 @@
 }
 
 .registration-content {
-    max-width: 700px;
+    max-width: 800px; /* Increased from 700px to match location cards */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2.5rem; /* Increased padding to match location cards */
     background-color: var(--light-text);
     border-radius: 8px;
+    min-width: 320px; /* Added minimum width for consistency */
 }
 
 .registration-content p {
@@ -77,6 +80,10 @@
     
     .location-card {
         flex: 1;
-        max-width: 280px;
+        max-width: 350px;
+    }
+    
+    .registration-content {
+        max-width: 900px; /* Wider on desktop to match location section */
     }
 }
