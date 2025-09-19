@@ -39,8 +39,10 @@
 }
 
 .hero-text h1 {
+    font-weight: 400;
+    font-size: 2.7rem;
     margin-top: 1rem;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
