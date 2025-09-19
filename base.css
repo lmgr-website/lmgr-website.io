@@ -26,3 +26,8 @@ body {
 a {
     text-decoration: none;
 }
+
+.v-space {
+    height: 1rem;
+    width: 100%;
+}
