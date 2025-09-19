@@ -63,7 +63,6 @@
 .board-member {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
@@ -87,10 +86,15 @@
     max-width: min(70vw, 1000px);
 }
 
+.board-member-text p {
+    margin-top: 0.5rem;
+}
+
 .board-member h3 {
     color: var(--accent-color);
     font-size: 1.3rem;
-    margin-bottom: 0.25rem; 
+    margin: 0rem;
+    margin-top: 0.5rem; 
 }
 
 .president {
