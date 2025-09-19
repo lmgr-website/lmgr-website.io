@@ -46,6 +46,14 @@
     margin: 0.3rem auto 0;
 }
 
+.about-us h2::after {
+    width: 22rem;
+}
+
+.facilitators h2::after {
+    width: 14rem;
+}
+
 /* Board of Directors */
 .board-memeber-container {
     display: flex;
