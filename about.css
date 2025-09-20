@@ -21,6 +21,17 @@
     line-height: 1.6;
 }
 
+.about-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.about-us-image img {
+    border: 0.5px solid var(--accent-color);
+    border-radius: 0.5rem;
+}
 
 /* Section Headers */
 .about-us h2,
