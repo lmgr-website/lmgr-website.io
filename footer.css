@@ -11,18 +11,14 @@
 }
 
 .footer-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
-    padding: 0 0 2rem 8rem;
+    margin-bottom: 2rem;
 }
-.footer-column {
-    width: 15rem;
-}
-
 
 .footer-column h3 {
-    margin: 1rem 0 0.5rem 0;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     color: var(--secondary-color);
 }
@@ -57,7 +53,7 @@
     margin-bottom: 1rem;
     font-size: 0.9rem;
     color: var(--light-text);
-    max-width: 850px;
+    max-width: 800px;
     margin-inline: auto;
     line-height: 1.5;
 }
