@@ -108,17 +108,10 @@
     margin-top: 0.5rem; 
 }
 
-.president {
+.position {
     display: block;
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--primary-color);
-}
-
-.secretary {
-    display: block;
-    font-weight: bold;
-    font-size: 0.9 rem;
     color: var(--primary-color);
 }
 
