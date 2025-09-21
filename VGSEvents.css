@@ -1,0 +1,113 @@
+/* Support Groups Page Styles */
+
+.hero {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Locations Section */
+.locations {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.locations h2 {
+    margin-bottom: 2rem;
+}
+
+/* Override board-member-container for locations */
+.locations .board-member-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Location Cards */
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px; /* Increased from 800px */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.location-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 2rem; /* Keep padding the same or reduce it */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--primary-color);
+    min-width: 380px; /* Increase card width instead */
+    width: 100%; /* Allow cards to use available space */
+}
+
+.location-card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.location-card p {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Registration Information */
+.registration-info {
+    margin-top: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.registration-content {
+    max-width: 800px; /* Increased from 700px to match location cards */
+    margin: 0 auto;
+    padding: 2.5rem; /* Increased padding to match location cards */
+    background-color: var(--light-text);
+    border-radius: 8px;
+    min-width: 320px; /* Added minimum width for consistency */
+}
+
+.registration-content p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .location-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+    
+    .location-card {
+        flex: 1;
+        max-width: 350px;
+    }
+    
+    .registration-content {
+        max-width: 900px; /* Wider on desktop to match location section */
+    }
+}
