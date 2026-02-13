@@ -85,7 +85,19 @@
     object-fit: cover;
     border-radius: 100%;
     flex-shrink: 0;
-    border: 2px solid var(--primary-color)
+    border: 2px solid var(--primary-color);
+    object-position: center center;
+}
+
+/* Added this because some of the images were going out of bounds
+    use this to bring it down a tad bit
+*/
+.board-member img.adjust-down {
+    object-position: center 2%;
+}
+
+.board-member img.zoom-out {
+    transform: scale(); 
 }
 
 .board-member-text {
