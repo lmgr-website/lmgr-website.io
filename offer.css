@@ -69,6 +69,7 @@
 .offer-content p {
     font-size: 0.95rem;
     color: var(--text-color);
+    text-align: justify;
 }
 
 .learn-link {

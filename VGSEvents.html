@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="generalSection.css">
+    <link rel="stylesheet" href="contentPage.css">
     <link rel="stylesheet" href="VGSEvents.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <header class="site-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Vancouver Grief Society</a>
+                <a class="navbar-brand" href="index.html">Vancouver Grief Society</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,17 +31,18 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-2">
                         <li class="nav-item"><a class="nav-link btn-nav" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link btn-nav" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link btn-nav" href="about.html">Our Team</a></li>
                         <li class="nav-item"><a class="nav-link btn-nav" href="supportGroups.html">Support Groups</a></li>
                         <li class="nav-item"><a class="nav-link btn-nav" href="education.html">Education</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link btn-nav" href="#">Resources</a></li> -->
+                        <li class="nav-item"><a class="nav-link btn-nav" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link btn-nav" href="faq.html">FAQ</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link btn-nav dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Events
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
                                 <li><a class="dropdown-item" href="VGSEvents.html">VGS</a></li>
-                                <li><a class="dropdown-item" href="#">Community Events</a></li>
+                                <li><a class="dropdown-item" href="communityEvents.html">Community Events</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link btn-nav" href="#footer">Contact</a></li>
@@ -53,69 +54,70 @@
 
     <section class="hero">
         <div class="container">
-            <!-- Images Row -->
             <div class="row justify-content-center g-2">
                 <div class="col-12 col-md-3">
                     <div class="text-center">
-                        <img src="images/VGSEvents/swan.jpg" alt="Vancouver cityscape" class="img-fluid rounded shadow-sm" style="width: 300px; height: 500px; object-fit: cover;" />
+                        <img src="images/VGSEvents/swan.jpg" alt="Swan on the water" class="img-fluid rounded shadow-sm subpage-hero-image" />
                     </div>
                 </div>
                 <div class="col-4 col-md-3 d-none d-md-block">
                     <div class="text-center">
-                        <img src="images/VGSEvents/flower.jpg" alt="White flower" class="img-fluid rounded shadow-sm" style="width: 300px; height: 500px; object-fit: cover;" />
+                        <img src="images/VGSEvents/flower.jpg" alt="Flower" class="img-fluid rounded shadow-sm subpage-hero-image" />
                     </div>
                 </div>
                 <div class="col-4 col-md-3 d-none d-md-block">
                     <div class="text-center">
-                        <img src="images/VGSEvents/clouds.jpg" alt="Peaceful landscape" class="img-fluid rounded shadow-sm" style="width: 300px; height: 500px; object-fit: cover;" />
+                        <img src="images/VGSEvents/clouds.jpg" alt="Clouds" class="img-fluid rounded shadow-sm subpage-hero-image" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hero-text">
-            <h1>Support Groups</h1>
-            <p>
-                Groups of 6-12 members meet in two-hour evening sessions once per week. Over the course of six weeks, trained facilitators present information on grief and bereavement, encouraging participants to learn and confidentially share in a safe, supportive setting.
-            </p>
+    <section class="hero-text px-3">
+        <h1>VGS Events</h1>
+        <p>
+            Over the course of six weeks, groups of 6-12 participants meet once per week in two-hour evening sessions. Trained facilitators offer information on grief and bereavement, encouraging participants to learn and confidentially share in a safe, supportive setting.
+        </p>
+        <p>Our groups offer a three-way approach to those in grief:</p>
+        <ul>
+            <li>practical information and tools to help as a guide through loss</li>
+            <li>a chance to connect with others with similar experiences who "get it"</li>
+            <li>a process-oriented approach that includes week-to-week practices</li>
+        </ul>
     </section>
-            <!-- Locations Section -->
-            <section class="locations">
-                <div class="board-member-container">
-                    <div class="location-info">
-                        <div class="location-card">
-                            <h3>Downtown</h3>
-                            <p><strong>October 20 - November 24, 2025</strong></p>
-                            <p>7-9pm</p>
-                        </div>
-                        
-                        <div class="location-card">
-                            <h3>Kerrisdale</h3>
-                            <p><strong>October 7 - November 18, 2025</strong></p>
-                            <p>7-9pm</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Registration Information -->
-            <section class="registration-info">
-                <div class="registration-content">
-                    <p>
-                        You may register at any time. The intake process for each group will begin roughly one month prior to the start of the session. One of our facilitators will be in touch via email to set up a brief phone conversation to learn more about your loss and provide additional information about the program, ensuring a good fit for your needs.
-                    </p>
+    <section class="locations">
+        <div class="board-member-container">
+            <div class="location-info">
+                <div class="location-card">
+                    <h3>Downtown</h3>
+                    <p><strong>October 20 - November 24, 2025</strong></p>
+                    <p>7-9pm</p>
                 </div>
-            </section>
+
+                <div class="location-card">
+                    <h3>Kerrisdale</h3>
+                    <p><strong>October 7 - November 18, 2025</strong></p>
+                    <p>7-9pm</p>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <section class="registration-info px-3">
+        <div class="registration-content">
+            <p>
+                You may register at any time. The intake process for each group will begin roughly one month prior to the start of the session. One of our facilitators will be in touch via email to set up a brief phone conversation to learn more about your loss and provide additional information about the program, ensuring a good fit for your needs.
+            </p>
+        </div>
+    </section>
 
-    <!-- Registration Call to Action -->
     <section class="general-section">
         <div class="container">
             <h2>Ready to Join a Support Group?</h2>
             <p>
-                Take the first step towards sharing and connection with others who understand your journey
+                Take the first step toward sharing and connection with others who understand your journey.
             </p>
             <div class="links">
                 <a href="https://forms.gle/qHXYwBynuDDzqtFHA">Register</a>
@@ -127,13 +129,13 @@
         <div class="container">
             <h2>Support Our Work</h2>
             <p>
-                As a non-profit that receives no public funding, we rely on the support of our community.
-                Your donation helps us continue to provide grief support programs and educational resources for those in
-                need.
+                As a non-profit that receives no public funding, we rely on the support of our community. Your support helps us continue to provide grief support programs and educational resources for those in need.
             </p>
             <div class="links">
                 <a href="https://forms.gle/PBLocq9SE84tPvTj7">Donate</a>
                 <a href="https://forms.gle/aaV5SkNqMmpXe4eQ7">Volunteer</a>
+                <a href="mailto:lmgr@lmgr.ca?subject=Membership%20Inquiry">Become a Member</a>
+                <a href="education.html#grief-education-workshop">Become a Facilitator</a>
             </div>
         </div>
     </section>
@@ -141,29 +143,26 @@
     <footer id="footer" class="site-footer">
         <div class="container footer-container">
             <div class="footer-grid">
-
-                <!-- Programs -->
                 <div class="footer-column">
                     <h3>Programs</h3>
                     <ul>
                         <li><a href="supportGroups.html">Support Groups</a></li>
                         <li><a href="education.html">Education</a></li>
+                        <li><a href="about.html">Our Team</a></li>
                     </ul>
                 </div>
-    
-                <!-- Resources -->
+
                 <div class="footer-column">
                     <h3>Resources</h3>
                     <ul>
-                        <li><a href="#">Grief Resources</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="https://forms.gle/5CZ8idRxc71DqHw28">Newsletter</a></li>
                         <li><a href="VGSEvents.html">VGS Events</a></li>
-                        <li><a href="#">Community Events</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="communityEvents.html">Community Events</a></li>
                     </ul>
                 </div>
-    
-                <!-- Social Links -->
+
                 <div class="footer-column">
                     <h3>Connect</h3>
                     <ul>
@@ -173,7 +172,6 @@
                     </ul>
                 </div>
 
-                <!-- Contact Column -->
                 <div class="footer-column">
                     <h3>Contact Us</h3>
                     <ul>
@@ -183,13 +181,12 @@
                 </div>
             </div>
 
-            <!-- Acknowledgement & Bottom Bar -->
             <div class="footer-bottom">
                 <p class="acknowledgement">
-                    The Vancouver Grief Society acknowledges that we live, work, and learn on the unceded traditional territories of the 
-                    xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations. 
+                    The Vancouver Grief Society acknowledges that we live, work, and learn on the unceded traditional territories of the
+                    xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish), and səlilwətaɬ (Tsleil-Waututh) Nations.
                     <br><br>
-                    The Society respects and honours the diverse and distinct histories, languages, and cultures of the region’s Indigenous peoples.
+                    The Society respects and honours the diverse and distinct histories, languages, and cultures of the region's Indigenous peoples.
                 </p>
                 <p class="copyright">
                     © 2025 Vancouver Grief Society. All rights reserved.

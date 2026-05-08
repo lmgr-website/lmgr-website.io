@@ -1,10 +1,14 @@
 /* Support Groups Page Styles */
 
 .hero {
-    padding: 7.5rem 0;
+    padding: 4rem 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero .row {
+    row-gap: 0.75rem;
 }
 
 .hero-text h1 {
@@ -16,11 +20,22 @@
 }
 
 .hero-text p {
-    max-width: 700px;
-    margin: 0 auto 3rem;
-    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 1.5rem;
+    text-align: justify;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.hero-text ul {
+    max-width: 860px;
+    margin: 0 auto 2.5rem;
+    padding-left: 1.25rem;
+}
+
+.hero-text li {
+    margin-bottom: 0.75rem;
+    text-align: justify;
 }
 
 /* Locations Section */
@@ -57,8 +72,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--primary-color);
-    min-width: 380px; /* Increase card width instead */
-    width: 100%; /* Allow cards to use available space */
+    width: 100%;
 }
 
 .location-card h3 {
@@ -80,18 +94,18 @@
 }
 
 .registration-content {
-    max-width: 800px; /* Increased from 700px to match location cards */
+    width: min(100%, 800px);
     margin: 0 auto;
-    padding: 2.5rem; /* Increased padding to match location cards */
+    padding: 2rem;
     background-color: var(--light-text);
     border-radius: 8px;
-    min-width: 320px; /* Added minimum width for consistency */
 }
 
 .registration-content p {
     color: var(--text-color);
     line-height: 1.6;
     margin: 0;
+    text-align: justify;
 }
 
 /* Responsive Design */
@@ -108,6 +122,6 @@
     }
     
     .registration-content {
-        max-width: 900px; /* Wider on desktop to match location section */
+        max-width: 900px;
     }
 }

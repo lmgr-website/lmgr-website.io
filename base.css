@@ -22,10 +22,15 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     background-color: var(--background);
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .v-space {

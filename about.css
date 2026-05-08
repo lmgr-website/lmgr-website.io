@@ -31,6 +31,7 @@
 .about-us-image img {
     border: 0.5px solid var(--accent-color);
     border-radius: 0.5rem;
+    max-width: min(100%, 900px);
 }
 
 /* Section Headers */
@@ -77,6 +78,16 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 4rem;
+}
+
+.history-card {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+.history-card p {
+    text-align: justify;
+    margin-bottom: 0;
 }
 
 .board-member img {
