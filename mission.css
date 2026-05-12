@@ -11,16 +11,21 @@
 }
 
 .mission-image {
-    flex: 1 1 0%;
+    flex: 1.35 1 0%;
+    min-width: 0;
 }
 
 .mission-image img {
-    height: 35vh;
+    width: 100%;
+    max-width: none;
+    height: auto;
     border-radius: 8px;
+    display: block;
 }
 
 .mission-content {
     flex: 1 1 45%;
+    min-width: 280px;
 }
 
 .mission-content h2 {
@@ -69,5 +74,9 @@
 @media (max-width: 768px) {
     .mission-container {
         flex-direction: column;
+    }
+
+    .mission-image img {
+        max-width: 100%;
     }
 }
