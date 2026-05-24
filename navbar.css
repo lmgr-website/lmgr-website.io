@@ -47,14 +47,16 @@
     font-size: 1rem;
     color: var(--text-color);
     border: 1px solid transparent;
-    transition: 
+    transition:
         background-color 0.2s ease,
         border-color 0.2s ease;
     text-wrap: nowrap;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-nav.selected {
     color: var(--background);
     background-color: var(--primary-color);
 }
