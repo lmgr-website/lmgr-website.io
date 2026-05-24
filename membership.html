@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership | Vancouver Grief Society</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contentPage.css">
+    <link rel="stylesheet" href="membership.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-xxl">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Vancouver Grief Society</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link btn-nav" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-nav dropdown-toggle" href="#" id="eventsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                What we offer
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="supportGroups.html">Support Groups</a></li>
+                                <li><a class="dropdown-item" href="education.html">Education</a></li>
+                                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link btn-nav" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link btn-nav" href="about.html">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link btn-nav" href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-page membership-page">
+        <div class="container">
+            <section class="subpage-hero membership-hero">
+                <h1 class="page-title">Membership</h1>
+                <p class="page-intro membership-intro">Annual membership is $28. Members are entitled to voting privileges at our Annual General Meeting, invitations to special events, and receipt of the Society newsletter. Members also receive an annual 15% discount on a grief support group registration fee for themselves, a family member, or friend.</p>
+            </section>
+
+            <section class="membership-card" aria-labelledby="membership-form-title">
+                <div id="membershipFormWrapper">
+                    <h2 id="membership-form-title">Become a Member</h2>
+                    <p class="membership-note">Use this single form for both new memberships and membership renewals.</p>
+
+                    <form id="membershipForm" class="membership-form" method="post">
+                        <fieldset class="membership-fieldset">
+                            <legend>New or Renew</legend>
+                            <div class="choice-group">
+                                <label class="choice-option" for="membership-type-new">
+                                    <input id="membership-type-new" type="radio" name="membershipType" value="new" required checked>
+                                    <span>
+                                        <strong>New Membership</strong>
+                                        <span class="choice-description">Default option for first-time members.</span>
+                                    </span>
+                                </label>
+                                <label class="choice-option" for="membership-type-renewal">
+                                    <input id="membership-type-renewal" type="radio" name="membershipType" value="renewal" required>
+                                    <span>
+                                        <strong>Renew Membership</strong>
+                                        <span class="choice-description">Choose this option when you are renewing an existing membership.</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="firstName">First Name</label>
+                                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+                            </div>
+                            <div class="field">
+                                <label for="lastName">Last Name</label>
+                                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="mailingAddress">Mailing Address</label>
+                            <input id="mailingAddress" name="mailingAddress" type="text" autocomplete="street-address" required>
+                        </div>
+
+                        <div class="form-row form-row-three">
+                            <div class="field">
+                                <label for="city">City</label>
+                                <input id="city" name="city" type="text" autocomplete="address-level2" required>
+                            </div>
+                            <div class="field">
+                                <label for="province">Province</label>
+                                <input id="province" name="province" type="text" autocomplete="address-level1" required>
+                            </div>
+                            <div class="field">
+                                <label for="postalCode">Postal Code</label>
+                                <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="emailAddress">Email Address</label>
+                                <input id="emailAddress" name="emailAddress" type="email" autocomplete="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel">
+                            </div>
+                        </div>
+
+                        <fieldset class="membership-fieldset">
+                            <legend>Payment</legend>
+                            <p class="fieldset-copy">How do you intend to pay?</p>
+                            <div class="choice-group choice-group-inline">
+                                <label class="choice-option" for="payment-etransfer">
+                                    <input id="payment-etransfer" type="radio" name="paymentMethod" value="e-transfer" required>
+                                    <span>e-transfer</span>
+                                </label>
+                                <label class="choice-option" for="payment-paypal">
+                                    <input id="payment-paypal" type="radio" name="paymentMethod" value="PayPal" required>
+                                    <span>PayPal</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="membership-fieldset">
+                            <legend>Newsletter</legend>
+                            <p class="fieldset-copy">Would you like to receive our emailed newsletter?</p>
+                            <div class="choice-group">
+                                <label class="choice-option" for="newsletter-yes">
+                                    <input id="newsletter-yes" type="radio" name="newsletterPreference" value="yes" required>
+                                    <span>yes</span>
+                                </label>
+                                <label class="choice-option" for="newsletter-no">
+                                    <input id="newsletter-no" type="radio" name="newsletterPreference" value="no" required>
+                                    <span>no</span>
+                                </label>
+                                <label class="choice-option" for="newsletter-current">
+                                    <input id="newsletter-current" type="radio" name="newsletterPreference" value="already subscribed" required>
+                                    <span>I am currently subscribed</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="membership-actions">
+                            <button type="submit" class="membership-primary-action">Continue to Payment Options</button>
+                        </div>
+
+                        <p class="membership-disclaimer">This website does not save your membership form information after you submit it.</p>
+                    </form>
+                </div>
+
+                <section id="membershipConfirmation" class="membership-confirmation is-hidden" aria-live="polite" aria-labelledby="membership-confirmation-title">
+                    <h2 id="membership-confirmation-title">Thank you for joining the Vancouver Grief Society as a member or renewing your membership.</h2>
+                    <p>We sincerely appreciate your support.</p>
+                    <p>Please submit your $28 membership fee.</p>
+
+                    <div class="confirmation-panel">
+                        <h3>Options</h3>
+                        <p><strong>Pay by e-Transfer (preferred)</strong> at <a class="membership-link" href="mailto:vgspayment@gmail.com">vgspayment@gmail.com</a></p>
+                        <p><strong>Pay with credit card or PayPal</strong> using <a class="membership-link" href="#" data-membership-paypal-link target="_blank" rel="noreferrer">this link to PayPal</a></p>
+                    </div>
+
+                    <p>If you have any questions about your membership please leave a message at 604-696-1060 or send an email to <a class="membership-link" href="mailto:vancouvergriefsociety@gmail.com">vancouvergriefsociety@gmail.com</a>.</p>
+
+                    <div class="confirmation-actions">
+                        <a class="membership-primary-action" href="#" data-membership-paypal-link target="_blank" rel="noreferrer">Pay Now with PayPal</a>
+                        <a class="membership-secondary-action" href="index.html">Return to VGS Home</a>
+                        <button type="button" id="submitAnotherMembership" class="membership-text-action">Submit another membership form</button>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="supportGroups.html">Support Groups</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="about.html">Our Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="https://forms.gle/5CZ8idRxc71DqHw28">Newsletter</a></li>
+                        <li><a href="VGSEvents.html">VGS Events</a></li>
+                        <li><a href="communityEvents.html">Community Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="https://forms.gle/aaV5SkNqMmpXe4eQ7">Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Phone: (604) 696-1060</li>
+                        <li>Email: lmgr@lmgr.ca</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="acknowledgement">
+                    The Vancouver Grief Society acknowledges that we live, work, and learn on the unceded traditional territories of the
+                    Musqueam, Squamish, and Tsleil-Waututh Nations.
+                    <br><br>
+                    The Society respects and honours the diverse and distinct histories, languages, and cultures of the region's Indigenous peoples.
+                </p>
+                <p class="copyright">
+                    © 2025 Vancouver Grief Society. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="membership.js"></script>
+</body>
+
+</html>
