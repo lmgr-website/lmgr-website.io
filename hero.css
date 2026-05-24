@@ -34,7 +34,11 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
+}
+
+.hero-text {
+    width: min(100%, 860px);
 }
 
 .hero-text h1 {
@@ -48,6 +52,7 @@
 .hero-text p {
     font-size: 1.25rem;
     margin-top: 0.5rem;
+    text-align: left;
 }
 
 .btn-hero {

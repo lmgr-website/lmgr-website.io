@@ -23,6 +23,16 @@ body {
     color: var(--text-color);
     background-color: var(--background);
     overflow-x: hidden;
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
 a {

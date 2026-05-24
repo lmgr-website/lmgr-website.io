@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: 3rem 1rem;
 }
 
@@ -24,7 +24,7 @@
 .general-section p {
     max-width: 700px;
     margin: 0 auto 3rem;
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -83,13 +83,13 @@
 }
 
 .content-section h2 {
-    text-align: left;
+    text-align: center;
 }
 
 .content-section p {
     max-width: 900px;
     margin: 0 0 1.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .content-section ul {
@@ -103,10 +103,6 @@
 }
 
 @media (max-width: 767.98px) {
-    .content-section h2 {
-        text-align: center;
-    }
-
     .content-section .links {
         justify-content: center;
     }
