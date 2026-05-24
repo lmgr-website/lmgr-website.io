@@ -69,11 +69,11 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
   - [x] Chris → “Facilitator Liaison”.
   - [x] Karen → “Community Relations & Communications”.
 - [x] Reorder sections so “Our History” appears below “Our Board” and “Our Facilitators”.
-- [ ] Replace “Our History” photo with old website photo (pending link/source confirmation).
+- [x] Replace “Our History” photo with old website photo (pending link/source confirmation).
 - [ ] Replace “Our History” text content (pending text from Karen).
 
 ## FAQ
-- [ ] Update “I’m interested in becoming a support group facilitator…” entry to include contact email and “reach out to us at [email]”.
+- [x] Update “I’m interested in becoming a support group facilitator…” entry to include contact email and “reach out to us at [email]”.
 
 ## Content / assets dependency checklist
 - [ ] Delores sends: cropped Education image.

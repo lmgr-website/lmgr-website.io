@@ -66,6 +66,13 @@
 
 .faq-item {
     scroll-margin-top: 7rem;
+    transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.faq-item-highlight {
+    background-color: #fff6dd;
+    border-color: rgba(163, 29, 29, 0.45);
+    box-shadow: 0 0 0 4px rgba(239, 208, 172, 0.85), 0 10px 24px rgba(109, 35, 35, 0.12);
 }
 
 .faq-list,

@@ -30,8 +30,9 @@
     line-height: 1.6;
 }
 
-.remove-margin {
-    margin: 0;
+.remove-vertical-margin {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .add-margin {
