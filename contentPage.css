@@ -30,7 +30,7 @@
 .content-page li,
 .resource-card p,
 .faq-item p {
-    text-align: left;
+    text-align: justify;
 }
 
 .page-intro {
@@ -42,14 +42,12 @@
     font-size: 1.8rem;
     color: var(--primary-color);
     margin: 2.5rem 0 1rem;
-    text-align: center;
 }
 
 .content-page h3 {
     font-size: 1.25rem;
     color: var(--accent-color);
     margin: 1.5rem 0 0.5rem;
-    text-align: center;
 }
 
 .content-page ul {

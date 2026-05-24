@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     padding: 3rem 1rem;
 }
 
 .general-section .container .links {
+
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -16,6 +17,8 @@
 .general-section h2 {
     font-size: 2.2rem;
     font-weight: bold;
+    alkjdkf;
+
     text-align: center;
     margin-bottom: 1rem;
     color: var(--accent-color);
@@ -24,9 +27,18 @@
 .general-section p {
     max-width: 700px;
     margin: 0 auto 3rem;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.remove-margin {
+    margin: 0;
+}
+
+.add-margin {
+    margin-top: 1 rem;
+    margin-bottom: 1 rem;
 }
 
 .general-section a,
@@ -41,7 +53,7 @@
     font-weight: 500;
     border: 1px solid transparent;
     font-size: 1.25rem;
-    transition: 
+    transition:
         background-color 0.2s ease,
         border-color 0.2s ease,
         color 0.2s ease,
@@ -89,7 +101,7 @@
 .content-section p {
     max-width: 900px;
     margin: 0 0 1.5rem;
-    text-align: left;
+    text-align: justify;
 }
 
 .content-section ul {
@@ -103,6 +115,10 @@
 }
 
 @media (max-width: 767.98px) {
+    .content-section h2 {
+        text-align: center;
+    }
+
     .content-section .links {
         justify-content: center;
     }

@@ -16,7 +16,7 @@
 .about-us .intro {
     max-width: 700px;
     margin: 0 auto 3rem;
-    text-align: left;
+    text-align: center;
     font-size: 1.1rem;
     line-height: 1.6;
 }
@@ -86,7 +86,7 @@
 }
 
 .history-card p {
-    text-align: left;
+    text-align: justify;
     margin-bottom: 0;
 }
 
@@ -116,7 +116,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: justify;
     max-width: min(70vw, 1000px);
 }
 

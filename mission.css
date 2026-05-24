@@ -33,14 +33,13 @@
     margin-bottom: 1rem;
     font-weight: bold;
     color: var(--accent-color);
-    text-align: center;
 }
 
 .mission-content p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
-    text-align: left;
+    text-align: justify;
 }
 
 .mission-content h3 {
@@ -48,7 +47,6 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--accent-color);
-    text-align: center;
 }
 
 .values-list {
