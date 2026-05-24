@@ -5,14 +5,15 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
 
 ## Global / Cross-page updates
 - [ ] Add warm/welcoming/calm nature photos to landing section of each page.
-- [ ] Review Delores’ spec sheet for any additional edits and add them to this checklist.
+- [x] Review Delores’ spec sheet for any additional edits and add them to this checklist.
 
 ## Navbar
-- [ ] Highlight the active/current page button in the navbar.
-- [ ] Update nav order to: **Home, What We Offer, FAQ, About Us, Contact**.
+- [x] Highlight the active/current page button in the navbar.
+- [x] Update nav order to: **Home, What We Offer, FAQ, About Us, Contact**.
 - [ ] Rename “Our Team” to “About Us”.
-- [ ] Remove “Events” button for now.
-- [ ] Update “What We Offer” menu options to: **Support Groups, Education, Resources**.
+- [x] Remove “Events” button for now.
+- [x] Update “What We Offer” menu options to: **Support Groups, Education, Resources**.
+- [x] Mobile: collapse the navbar after tapping **Contact**.
 
 ## Home page
 - [ ] Photo array: move **hands + candle** to bottom-right.
@@ -25,10 +26,10 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
 - [ ] Remove period after “loss” in hero section copy.
 - [ ] Left-justify “Support Our Work” text.
 - [ ] “What We Offer” cards:
-  - [ ] Center card headings.
+  - [x] Center card headings.
   - [ ] Left-justify card body text.
   - [ ] Add more top/bottom spacing around card headers.
-- [ ] Center the “Our Mission” header.
+- [x] Center the “Our Mission” header.
 
 ## Support Our Work / Donation / Forms
 - [ ] Left-justify content in “Support Our Work”.
