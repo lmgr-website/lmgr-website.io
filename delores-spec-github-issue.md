@@ -21,7 +21,7 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
 - [x] Generate a new AI hands image for the center.
 - [x] Replace “What We Offer > Education” image with new cropped version (pending image from Delores).
 - [x] Mobile: show bridge photo first.
-- [] Mobile: make hero logo in navbar smaller (smaller than hero-section text).
+- [x] Mobile: make hero logo in navbar smaller (smaller than hero-section text).
 - [x] Left-justify Support Groups text.
 - [x] Remove period after “loss” in hero section copy.
 - [x] Left-justify “Support Our Work” text.
