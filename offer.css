@@ -53,22 +53,25 @@
 }
 
 .offer-content {
-  padding: 1rem;
+  padding: 1.25rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 .offer-content h3 {
-  margin: 0;
+  margin: 0.4rem 0 0.85rem;
   font-weight: bold;
   color: var(--accent-color);
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .offer-content p {
   font-size: 0.95rem;
   color: var(--text-color);
+  margin: 0;
+  text-align: left;
 }
 
 .learn-link {

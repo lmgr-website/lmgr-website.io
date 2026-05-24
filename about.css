@@ -108,7 +108,7 @@
 }
 
 .board-member img.zoom-out {
-    transform: scale(); 
+    transform: scale(1.0);
 }
 
 .board-member-text {
@@ -128,7 +128,7 @@
     color: var(--accent-color);
     font-size: 1.3rem;
     margin: 0rem;
-    margin-top: 1rem; 
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 

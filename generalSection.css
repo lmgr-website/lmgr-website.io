@@ -88,6 +88,30 @@
     color: var(--accent-color);
 }
 
+.support-our-work p {
+    margin: 0 auto 3rem;
+    text-align: left;
+}
+
+.support-our-work .links a,
+.support-our-work .links a:visited {
+    min-width: 12.5rem;
+    text-align: center;
+}
+
+.education-overview.content-section .container {
+    align-items: center;
+}
+
+.education-overview.content-section p {
+    margin: 0 auto 1.5rem;
+    text-align: center;
+}
+
+.education-overview.content-section .links {
+    justify-content: center;
+}
+
 .content-section .container {
     align-items: stretch;
 }

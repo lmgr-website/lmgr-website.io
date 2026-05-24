@@ -10,29 +10,29 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
 ## Navbar
 - [x] Highlight the active/current page button in the navbar.
 - [x] Update nav order to: **Home, What We Offer, FAQ, About Us, Contact**.
-- [ ] Rename “Our Team” to “About Us”.
+- [x] Rename “Our Team” to “About Us”.
 - [x] Remove “Events” button for now.
 - [x] Update “What We Offer” menu options to: **Support Groups, Education, Resources**.
 - [x] Mobile: collapse the navbar after tapping **Contact**.
 
 ## Home page
-- [ ] Photo array: move **hands + candle** to bottom-right.
-- [ ] Photo array: move **bridge image** to top-left.
-- [ ] Generate a new AI hands image for the center.
-- [ ] Replace “What We Offer > Education” image with new cropped version (pending image from Delores).
-- [ ] Mobile: show bridge photo first.
-- [ ] Mobile: make hero logo in navbar smaller (smaller than hero-section text).
-- [ ] Left-justify Support Groups text.
-- [ ] Remove period after “loss” in hero section copy.
-- [ ] Left-justify “Support Our Work” text.
-- [ ] “What We Offer” cards:
+- [x] Photo array: move **hands + candle** to bottom-right.
+- [x] Photo array: move **bridge image** to top-left.
+- [x] Generate a new AI hands image for the center.
+- [x] Replace “What We Offer > Education” image with new cropped version (pending image from Delores).
+- [x] Mobile: show bridge photo first.
+- [] Mobile: make hero logo in navbar smaller (smaller than hero-section text).
+- [x] Left-justify Support Groups text.
+- [x] Remove period after “loss” in hero section copy.
+- [x] Left-justify “Support Our Work” text.
+- [x] “What We Offer” cards:
   - [x] Center card headings.
-  - [ ] Left-justify card body text.
-  - [ ] Add more top/bottom spacing around card headers.
+  - [x] Left-justify card body text.
+  - [x] Add more top/bottom spacing around card headers.
 - [x] Center the “Our Mission” header.
 
 ## Support Our Work / Donation / Forms
-- [ ] Left-justify content in “Support Our Work”.
+- [x] Left-justify content in “Support Our Work”.
 - [ ] “Donate now” should go to a simple thank-you page (no form) with copy:
   - [ ] Include thank-you message.
   - [ ] End with: e-transfer option and/or credit card/PayPal link.
@@ -53,22 +53,22 @@ Implement all requested website edits from Delores/Karen spec notes. This issue 
 - [ ] Volunteer:
   - [ ] Replace with text-only page.
   - [ ] Instruct user to email specified address.
-- [ ] “Become a facilitator” CTA:
-  - [ ] Jump/link to FAQ question about becoming a facilitator.
+- [x] “Become a facilitator” CTA:
+  - [x] Jump/link to FAQ question about becoming a facilitator.
 
 ## Education page
-- [ ] Center text in yellow background section.
+- [x] Center text in yellow background section.
 
 ## About Us page
 - [ ] Change main image (pending from Karen).
 - [ ] Replace photos of Morgan and Carolyn (Karen already sent replacements).
 - [ ] Match face-to-background ratio to Ann’s image.
 - [ ] Mobile: add “Read more” expand/collapse for each person (show ~2–3 lines collapsed).
-- [ ] Remove “Our Team” header.
-- [ ] Update roles:
-  - [ ] Chris → “Facilitator Liaison”.
-  - [ ] Karen → “Community Relations & Communications”.
-- [ ] Reorder sections so “Our History” appears below “Our Board” and “Our Facilitators”.
+- [x] Remove “Our Team” header.
+- [x] Update roles:
+  - [x] Chris → “Facilitator Liaison”.
+  - [x] Karen → “Community Relations & Communications”.
+- [x] Reorder sections so “Our History” appears below “Our Board” and “Our Facilitators”.
 - [ ] Replace “Our History” photo with old website photo (pending link/source confirmation).
 - [ ] Replace “Our History” text content (pending text from Karen).
 

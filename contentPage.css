@@ -64,6 +64,10 @@
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
+.faq-item {
+    scroll-margin-top: 7rem;
+}
+
 .faq-list,
 .resource-list {
     display: grid;
