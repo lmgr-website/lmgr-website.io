@@ -107,8 +107,12 @@
     object-position: center 2%;
 }
 
+.board-member img.adjust-up {
+    object-position: center 65%;
+}
+
 .board-member img.zoom-out {
-    transform: scale(1.0);
+    object-position: center 10%;
 }
 
 .board-member-text {
