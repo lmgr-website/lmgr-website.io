@@ -115,6 +115,10 @@
     object-position: center 10%;
 }
 
+.board-member img.morgyn {
+    object-position: center top;
+}
+
 .board-member-text {
     display: flex;
     flex-direction: column;
