@@ -36,8 +36,12 @@
 }
 
 .add-margin {
-    margin-top: 1 rem;
-    margin-bottom: 1 rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.general-section .container.remove-vertical-margin p {
+    margin-bottom: 1.5rem;
 }
 
 .general-section a,
@@ -118,13 +122,14 @@
 }
 
 .content-section h2 {
+    font-size: 1.8rem;
     text-align: center;
 }
 
 .content-section p {
     max-width: 900px;
     margin: 0 0 1.5rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .content-section ul {

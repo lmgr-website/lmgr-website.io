@@ -34,7 +34,7 @@
 .content-page li,
 .resource-card p,
 .faq-item p {
-    text-align: justify;
+    text-align: left;
 }
 
 .page-intro {
@@ -88,6 +88,11 @@
 .resource-card p,
 .faq-item p {
     margin-bottom: 0;
+}
+
+.resource-card h2,
+.faq-item h2 {
+    margin-top: 0;
 }
 
 .faq-item p + p {
