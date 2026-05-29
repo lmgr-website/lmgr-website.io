@@ -109,7 +109,7 @@
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .location-info {
         flex-direction: row;
         justify-content: center;

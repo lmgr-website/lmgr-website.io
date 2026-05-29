@@ -76,8 +76,8 @@
     color: var(--primary-color);
 }
 
-/* Responsive: stack into 1-column grid on extra small screens */
-@media (max-width: 540px) {
+/* Responsive: stack into 1-column grid below tablet width */
+@media (max-width: 1023px) {
     .hero-grid {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;

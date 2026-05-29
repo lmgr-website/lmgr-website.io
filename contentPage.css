@@ -106,7 +106,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1023px) {
     .content-page {
         padding-top: 2rem;
     }
