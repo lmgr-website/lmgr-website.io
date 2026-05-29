@@ -90,6 +90,11 @@
     color: var(--text-color);
 }
 
+.location-card .availability-note {
+    color: #d00000;
+    font-style: italic;
+}
+
 /* Registration Information */
 .registration-info {
     margin-top: 3rem;
