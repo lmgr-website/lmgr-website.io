@@ -85,6 +85,10 @@
     margin-bottom: 1rem;
 }
 
+.location-card .location-area {
+    display: block;
+}
+
 .location-card p {
     margin-bottom: 0.5rem;
     color: var(--text-color);

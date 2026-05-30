@@ -110,7 +110,7 @@
 
 .education-overview.content-section p {
     margin: 0 auto 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 .education-overview.content-section .links {
@@ -148,7 +148,7 @@
 
 #grief-education-workshop p {
     margin: 0 auto 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 #grief-education-workshop ul {
