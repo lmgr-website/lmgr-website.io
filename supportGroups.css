@@ -87,6 +87,7 @@
 
 .location-card .location-area {
     display: block;
+    font-size: inherit;
 }
 
 .location-card p {
