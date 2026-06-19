@@ -50,6 +50,48 @@
     margin-bottom: 1.5rem;
 }
 
+.membership-form-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.membership-form-link,
+.membership-form-link:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1.1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.membership-form-link:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+
+.membership-form-frame-wrap {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(163, 29, 29, 0.16);
+    border-radius: 14px;
+    background-color: #fff;
+}
+
+.membership-form-frame {
+    display: block;
+    width: 100%;
+    min-height: 2200px;
+    border: 0;
+}
+
 .membership-form {
     display: grid;
     gap: 1.25rem;
@@ -257,5 +299,9 @@
     .membership-primary-action,
     .membership-secondary-action {
         width: 100%;
+    }
+
+    .membership-form-frame {
+        min-height: 2500px;
     }
 }
