@@ -78,6 +78,10 @@
 
 .history-card p {
     text-align: left;
+    margin-bottom: 1rem;
+}
+
+.history-card p:last-child {
     margin-bottom: 0;
 }
 
