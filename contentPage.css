@@ -104,6 +104,10 @@
     font-weight: 500;
 }
 
+.resource-contact a {
+    overflow-wrap: anywhere;
+}
+
 .history-image {
     width: 100%;
     border-radius: 12px;
