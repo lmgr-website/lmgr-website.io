@@ -77,13 +77,6 @@
     color: #fff;
 }
 
-.membership-form-frame-wrap {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid rgba(163, 29, 29, 0.16);
-    border-radius: 14px;
-    background-color: #fff;
-}
 
 .membership-form-frame {
     display: block;
