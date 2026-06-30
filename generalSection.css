@@ -114,6 +114,7 @@
 }
 
 .education-overview.content-section .links {
+    width: 100%;
     justify-content: center;
 }
 
@@ -156,6 +157,7 @@
 }
 
 #grief-education-workshop .links {
+    width: 100%;
     justify-content: center;
 }
 
